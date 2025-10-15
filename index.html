@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Space Magazine_TNochiyama</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vuetify@3.6.11/dist/vuetify.min.css'>
+<link rel='stylesheet' href='https://unpkg.com/@mdi/font@6.x/css/materialdesignicons.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'><link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div id="app">
+  <div id="contents">
+  <!--ヘッダー部-->
+  <div id="header">
+    <v-layout class="fixedHeader">
+    <v-app-bar color= "white">
+  <!--見出しボタン-->
+      <v-btn
+            class="btn1"
+            color="indigo"
+            size="x-large"
+            rounded="pill"
+            @click="backbtn"
+          >
+           Universe Journal
+          </v-btn>
+   <!--以降ダミーボタン-->
+      <v-btn
+            class="DummyBtn"
+            color="indigo"
+            size="x-large"
+            rounded="pill"
+            @click="backbtn"
+          >
+           Dummies
+        <v-icon icon="mdi-menu-right" class="mr-2"></v-icon>
+      </v-btn>
+      <v-btn
+            class="DummyBtn"
+            color="indigo"
+            size="x-large"
+            rounded="pill"
+            @click="backbtn"
+          >
+           News
+      </v-btn>
+      <v-btn
+            class="DummyBtn"
+            color="indigo"
+            size="x-large"
+            rounded="pill"
+            @click="backbtn"
+          >
+           Missions
+      </v-btn>
+      <v-btn
+            class="DummyBtn"
+            color="indigo"
+            size="x-large"
+            rounded="pill"
+            @click="backbtn"
+          >
+           Gallery
+      </v-btn>
+      <v-btn
+            class="DummyBtn"
+            color="indigo"
+            size="x-large"
+            rounded="pill"
+            @click="backbtn"
+          >
+           About
+         </v-btn>
+      <v-btn
+            class="DummyBtn"
+            color="indigo"
+            size="x-large"
+            rounded="pill"
+            @click="backbtn"
+          >
+           Contact
+         </v-btn>
+      </v-app-bar>
+    </v-layout>
+  </div>
+   <!--メインコンテンツ部-->
+    <div id="main">
+   <!--ページ先頭へ戻るボタン-->  
+      <v-btn
+            class="homebtn"
+            color="indigo"
+            size="x-large"
+            rounded="pill"
+            @click="backbtn"
+          >
+            <v-icon icon="mdi-home" class="mr-2"></v-icon>
+            TOP
+          </v-btn>
+   <!--記事本文-->
+      <h2 class="txtTitle"> {{ txtTitle }}</h2>
+        <p class="locate">Location: {{ locate }}</p>
+        <p class="ymd">Date: {{ ymd }}</p>
+        <img v-bind:src="pict" class="mainpic">
+        <p class="source">Image courtesy of NASA</p>
+      <h4 class="desc"> Description,URL(invalid),Source,etc. </h4>
+        <p class="txt">{{ txtMain }}</p>
+      　
+    　</div>
+    </div>
+   </div>
+    <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vuetify@3.6.11/dist/vuetify.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.11.0/axios.min.js'></script><script  src="./script.js"></script>
+
+  </body>
+  
+</html>

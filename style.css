@@ -1,0 +1,52 @@
+/* ページ全体*/
+#contents{
+  background:linear-gradient(to left top,white,#68D2DE);
+}
+/* ヘッダー部*/
+.fixedHeader{
+  font-family:Haettenschweiler;
+}
+.btn1{
+  font-size:40px;
+}
+.DummyBtn{
+  font-size:25px;
+}
+/* メインコンテンツ部*/
+#main{
+  text-align:center;
+}
+/* ページ先頭へ戻るボタン*/
+.homebtn{
+  position:fixed;
+  bottom:10px;
+  right:10px;
+}
+/* 記事本文*/
+h2{
+  font-size:30px;
+  padding-top: 80px;
+}
+.ymd{
+  width:800px;
+  text-align:left;
+  margin:0 auto;
+}
+.mainpic {
+  width:800px;  
+}
+.source{
+  width:800px;
+  text-align:right;
+  margin:0 auto;
+}
+h4{
+  width:800px;
+  text-align:left;
+  margin:0 auto;
+}
+.txt{
+  width:800px;
+  text-align:left;
+  margin:0 auto;
+}
